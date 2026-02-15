@@ -8,7 +8,11 @@ app = Flask(__name__)
 '''
 @app.route('/')
 def home():
-    return 'My home page'
+    return '<h1>My home page</h1>'
+
+@app.route('/about')
+def about():
+    return render_template('about.html')
 
 @app.errorhandler(404)
 def page_not_found(error):
