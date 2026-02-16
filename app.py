@@ -8,7 +8,7 @@ app = Flask(__name__)
 '''
 @app.route('/')
 def home():
-    return '<h1>My home page</h1>'
+    return 'My home page'
 
 @app.route('/about')
 def about():

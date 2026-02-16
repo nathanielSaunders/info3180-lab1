@@ -3,9 +3,11 @@
 <head> 
 <meta charset="UTF-8"> 
 <title>My Website - About</title> 
+<link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}" />
 </head> 
 <body> 
     <h1>Nathaniel Saunders</h1> 
+    <img src="{{ url_for('static', filename='image.png') }}">
     <p>Hi! I’m a dedicated and passionate student who loves learning and
          taking on new challenges. I approach everything I do with focus
           and determination, always aiming to do my best and grow from 
